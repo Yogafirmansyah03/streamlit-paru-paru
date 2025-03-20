@@ -2,3 +2,4 @@ streamlit
 scikit-learn
 seaborn
 statsmodels
+/content/predic_tabel.csv

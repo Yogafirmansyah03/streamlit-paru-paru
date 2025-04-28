@@ -4,3 +4,4 @@ streamlit
 scikit-learn
 pip==24.3.1
 seaborn
+statsmodels

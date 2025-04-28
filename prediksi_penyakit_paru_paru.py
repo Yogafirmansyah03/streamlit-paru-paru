@@ -11,7 +11,6 @@ Original file is located at
 
 import pandas as pd
 import numpy as np
-import matplotlib.pyplot as plt
 from sklearn.model_selection import train_test_split, GridSearchCV, cross_val_score, StratifiedKFold
 from sklearn.preprocessing import StandardScaler, OneHotEncoder
 from sklearn.linear_model import LogisticRegression
@@ -48,6 +47,7 @@ print(df.isnull().sum())
 lifestyle_features = ['Usia', 'Jenis_Kelamin', 'Merokok', 'Aktivitas_Begadang', 'Aktivitas_Olahraga', 'Bekerja', 'Penyakit_Bawaan']
 
 # Loop untuk setiap fitur
+import matplotlib.pyplot as plt
 import seaborn as sns
 for feature in lifestyle_features:
     plt.figure(figsize=(6, 4))

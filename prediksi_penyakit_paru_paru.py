@@ -24,7 +24,7 @@ print("Tujuan: Memprediksi penyakit paru-paru berdasarkan gaya hidup dan penyaki
 """**LOAD DATASET**"""
 
 # 1. Load Dataset
-df = pd.read_csv('/content/predic_tabel.csv')
+df = pd.read_csv('predic_tabel.csv')
 
 """**EDA**"""
 

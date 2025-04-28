@@ -11,7 +11,6 @@ Original file is located at
 
 import pandas as pd
 import numpy as np
-from sklearn.model_selection import train_test_split, GridSearchCV, cross_val_score, StratifiedKFold
 from sklearn.preprocessing import StandardScaler, OneHotEncoder
 from statsmodels.stats.outliers_influence import variance_inflation_factor
 from sklearn.linear_model import LogisticRegression
@@ -48,6 +47,7 @@ print(df.isnull().sum())
 lifestyle_features = ['Usia', 'Jenis_Kelamin', 'Merokok', 'Aktivitas_Begadang', 'Aktivitas_Olahraga', 'Bekerja', 'Penyakit_Bawaan']
 
 # Loop untuk setiap fitur
+from sklearn.model_selection import train_test_split, GridSearchCV, cross_val_score, StratifiedKFold
 for feature in lifestyle_features:
     plt.figure(figsize=(6, 4))
 

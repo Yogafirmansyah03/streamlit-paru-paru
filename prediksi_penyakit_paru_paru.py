@@ -43,10 +43,10 @@ print(df.describe())
 print(df.isnull().sum())
 
 # Daftar fitur gaya hidup
+from sklearn.model_selection import train_test_split, GridSearchCV, cross_val_score, StratifiedKFold
 lifestyle_features = ['Usia', 'Jenis_Kelamin', 'Merokok', 'Aktivitas_Begadang', 'Aktivitas_Olahraga', 'Bekerja', 'Penyakit_Bawaan']
 
 # Loop untuk setiap fitur
-from sklearn.model_selection import train_test_split, GridSearchCV, cross_val_score, StratifiedKFold
 for feature in lifestyle_features:
     plt.figure(figsize=(6, 4))
 

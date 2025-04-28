@@ -27,7 +27,7 @@ print("Tujuan: Memprediksi penyakit paru-paru berdasarkan gaya hidup dan penyaki
 df = pd.read_csv('predic_tabel.csv')
 
 """**EDA**"""
-
+import seaborn as sns
 plt.figure(figsize=(12, 6))
 sns.boxplot(data=df)
 plt.title("Boxplot Distribusi Data")
@@ -48,7 +48,6 @@ lifestyle_features = ['Usia', 'Jenis_Kelamin', 'Merokok', 'Aktivitas_Begadang', 
 # Loop untuk setiap fitur
 from statsmodels.stats.outliers_influence import variance_inflation_factor
 import matplotlib.pyplot as plt
-import seaborn as sns
 for feature in lifestyle_features:
     plt.figure(figsize=(6, 4))
 

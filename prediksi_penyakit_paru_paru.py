@@ -14,7 +14,6 @@ import numpy as np
 from sklearn.model_selection import train_test_split, GridSearchCV, cross_val_score, StratifiedKFold
 from sklearn.preprocessing import StandardScaler, OneHotEncoder
 from sklearn.linear_model import LogisticRegression
-from statsmodels.stats.outliers_influence import variance_inflation_factor
 from sklearn.metrics import accuracy_score, confusion_matrix, classification_report, roc_auc_score, roc_curve, precision_recall_curve
 from sklearn.decomposition import PCA
 import joblib
@@ -47,6 +46,7 @@ print(df.isnull().sum())
 lifestyle_features = ['Usia', 'Jenis_Kelamin', 'Merokok', 'Aktivitas_Begadang', 'Aktivitas_Olahraga', 'Bekerja', 'Penyakit_Bawaan']
 
 # Loop untuk setiap fitur
+from statsmodels.stats.outliers_influence import variance_inflation_factor
 import matplotlib.pyplot as plt
 import seaborn as sns
 for feature in lifestyle_features:

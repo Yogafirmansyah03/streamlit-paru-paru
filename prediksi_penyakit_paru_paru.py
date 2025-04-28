@@ -47,7 +47,6 @@ print(df.isnull().sum())
 lifestyle_features = ['Usia', 'Jenis_Kelamin', 'Merokok', 'Aktivitas_Begadang', 'Aktivitas_Olahraga', 'Bekerja', 'Penyakit_Bawaan']
 
 # Loop untuk setiap fitur
-from statsmodels.stats.outliers_influence import variance_inflation_factor
 for feature in lifestyle_features:
     plt.figure(figsize=(6, 4))
 
